@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Todo List</h1>
+    </div>
+    <div class="box">
+       <% for(let i=0; i<exej.length; i++){ %>
+        <div class="item">
+           <input type="checkbox">
+           <p><%= exej[i] %></p> 
+        </div>
+      <% } %>
+
+        <form action="/" method="POST">
+            <input type="text" name="ele1" placeholder="enter the task">
+            <button type="submit">+</button>
+        </form>
+    </div>
+</body>
+
+</html>
